@@ -1,0 +1,149 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Start head */
+.offer {
+    background-color: #51509b;
+    width: 60%;
+    margin: 20px auto;
+    padding: 40px;
+}
+
+.offer .info h1,
+.offer .info p {
+    color: white;
+}
+
+.offer .info p {
+    font-size: 14px;
+}
+
+.offer .info h1::after {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f0a6';
+    font-weight: 900;
+    color: #e7a71b;
+    position: relative;
+    left: 10px;
+}
+
+/* End head */
+/* Start Boxes */
+.offer .boxes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.offer .boxes .box {
+    width: calc(100% / 2);
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+.offer .boxes .premium > h2::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f005';
+    font-weight: 900;
+    color: #e7a71b;
+    position: relative;
+    margin-right: 20px;
+}
+
+.offer .boxes .enssent > h2::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f00c';
+    font-weight: 900;
+    color: #e7a71b;
+    position: relative;
+    margin-right: 20px;
+}
+
+.offer .boxes .box > h2 {
+    position: relative;
+    z-index: 3;
+}
+.offer .boxes .box > h2::after {
+    content: '';
+    position: absolute;
+    width: calc(100% - 100px);
+    height: 6px;
+    background-color: #ffeabe;
+    left: 41px;
+    bottom: 3px;
+    z-index: -1;
+}
+.offer .boxes .premium h2::after {
+    width: calc(100% - 120px);
+    left: 46px;
+}
+.offer .boxes .premium {
+    box-shadow: 0px 0px 35px -11px grey;
+    z-index: 1;
+}
+.offer .boxes .premium p {
+    font-size: 12px;
+    padding-top: 30px;
+}
+
+.offer .boxes .box div:not(:last-of-type) {
+    padding: 10px 0;
+    line-height: 1.5;
+    font-size: 14px;
+    border-bottom: 1px solid #e5ebf2;
+}
+
+.offer .boxes .box div:last-of-type {
+    padding-top: 30px;
+
+}
+
+.offer .boxes .box .price span {
+    font-size: 40px;
+    padding-right: 50px;
+    padding-left: 30px;
+    font-weight: bold;
+    color: #777;
+    position: relative;
+}
+
+.offer .boxes .box .price span::before {
+    content: '$';
+    position: absolute;
+    font-size: 20px;
+    left: 16px;
+}
+
+.offer .boxes .box .price span::after {
+    content: 'USD';
+    position: absolute;
+    font-size: 17px;
+    bottom: 8px;
+    right: 16px;
+}
+
+.offer .boxes .box .price button {
+    background-color: #e7a71b;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    margin-left: 60px;
+    border-radius: 3px;
+}
+
+/* End Boxes */
